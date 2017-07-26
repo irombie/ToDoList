@@ -14,6 +14,14 @@
 		155C86421F25CF7C0075583C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155C86401F25CF7C0075583C /* LaunchScreen.storyboard */; };
 		155C864D1F25CF7C0075583C /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C864C1F25CF7C0075583C /* ToDoListTests.swift */; };
 		155C86581F25CF7D0075583C /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C86571F25CF7D0075583C /* ToDoListUITests.swift */; };
+		155C866A1F25E78C0075583C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C86691F25E78C0075583C /* CustomCell.swift */; };
+		155C866C1F260A670075583C /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C866B1F260A670075583C /* EditViewController.swift */; };
+		155C866E1F2615820075583C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155C866D1F2615820075583C /* DetailViewController.swift */; };
+		158553381F27268100AB9024 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158553371F27268100AB9024 /* CoreData.framework */; };
+		1585533B1F272F8400AB9024 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 158553391F272F8400AB9024 /* ToDoList.xcdatamodeld */; };
+		158553461F27598300AB9024 /* DoItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158553441F27598300AB9024 /* DoItem+CoreDataClass.swift */; };
+		158553471F27598300AB9024 /* DoItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158553451F27598300AB9024 /* DoItem+CoreDataProperties.swift */; };
+		158660F81F26579700070FAC /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158660F71F26579700070FAC /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		155C86531F25CF7D0075583C /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		155C86571F25CF7D0075583C /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		155C86591F25CF7D0075583C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155C86691F25E78C0075583C /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		155C866B1F260A670075583C /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		155C866D1F2615820075583C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		158553371F27268100AB9024 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1585533A1F272F8400AB9024 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
+		158553441F27598300AB9024 /* DoItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DoItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		158553451F27598300AB9024 /* DoItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DoItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		158660F71F26579700070FAC /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				158553381F27268100AB9024 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +94,13 @@
 		155C862B1F25CF7C0075583C = {
 			isa = PBXGroup;
 			children = (
+				158553441F27598300AB9024 /* DoItem+CoreDataClass.swift */,
+				158553451F27598300AB9024 /* DoItem+CoreDataProperties.swift */,
 				155C86361F25CF7C0075583C /* ToDoList */,
 				155C864B1F25CF7C0075583C /* ToDoListTests */,
 				155C86561F25CF7D0075583C /* ToDoListUITests */,
 				155C86351F25CF7C0075583C /* Products */,
+				158553361F27268100AB9024 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +123,11 @@
 				155C863E1F25CF7C0075583C /* Assets.xcassets */,
 				155C86401F25CF7C0075583C /* LaunchScreen.storyboard */,
 				155C86431F25CF7C0075583C /* Info.plist */,
+				155C86691F25E78C0075583C /* CustomCell.swift */,
+				155C866B1F260A670075583C /* EditViewController.swift */,
+				155C866D1F2615820075583C /* DetailViewController.swift */,
+				158660F71F26579700070FAC /* CustomView.swift */,
+				158553391F272F8400AB9024 /* ToDoList.xcdatamodeld */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -123,6 +148,14 @@
 				155C86591F25CF7D0075583C /* Info.plist */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		158553361F27268100AB9024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				158553371F27268100AB9024 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +295,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155C866C1F260A670075583C /* EditViewController.swift in Sources */,
+				158553471F27598300AB9024 /* DoItem+CoreDataProperties.swift in Sources */,
 				155C863A1F25CF7C0075583C /* ViewController.swift in Sources */,
+				155C866E1F2615820075583C /* DetailViewController.swift in Sources */,
+				158553461F27598300AB9024 /* DoItem+CoreDataClass.swift in Sources */,
+				158660F81F26579700070FAC /* CustomView.swift in Sources */,
+				155C866A1F25E78C0075583C /* CustomCell.swift in Sources */,
 				155C86381F25CF7C0075583C /* AppDelegate.swift in Sources */,
+				1585533B1F272F8400AB9024 /* ToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +556,7 @@
 				155C865E1F25CF7D0075583C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		155C865F1F25CF7D0075583C /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +565,7 @@
 				155C86611F25CF7D0075583C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		155C86621F25CF7D0075583C /* Build configuration list for PBXNativeTarget "ToDoListUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,8 +574,22 @@
 				155C86641F25CF7D0075583C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		158553391F272F8400AB9024 /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1585533A1F272F8400AB9024 /* ToDoList.xcdatamodel */,
+			);
+			currentVersion = 1585533A1F272F8400AB9024 /* ToDoList.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 155C862C1F25CF7C0075583C /* Project object */;
 }
