@@ -70,6 +70,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                 if let objs = self.fetchedResultsController.fetchedObjects {
                     let okAction = UNNotificationAction(identifier: "OK",
                                                         title: "OK", options: [])
+                    
                     let deleteAction = UNNotificationAction(identifier: "del",
                                                             title: "Delete", options: [.destructive])
                     let category = UNNotificationCategory(identifier: "NotifCat",
@@ -98,7 +99,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         }
     }
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.alert,.sound])
+        
+        completionHandler([.badge,.alert,.sound])
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -133,13 +135,10 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
     }
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
-        
     }
-    //func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      //  return 150
-    //}
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //tableView.deselectRow(at: indexPath, animated: true)
@@ -229,6 +228,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             for o in objs{
                 if(o.name == name){
                     o.isDone = true
+                    ad.saveContext()
+                    break;
                 }
             }
         }

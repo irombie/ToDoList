@@ -34,6 +34,7 @@ class EditViewController: UIViewController {
         if(!isEdit){
             
             item = DoItem(context: context)
+            item.isDone = false 
         }
         else{
             item = itemToEdit
